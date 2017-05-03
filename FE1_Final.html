@@ -1,0 +1,91 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>FE1 Final</title>
+	<link rel="stylesheet" type="text/css" href="FE1_final.css">
+</head>
+<body>
+	<table class="wrapper">
+		<tr>
+			<td>
+			<a href="#" class="navigation">Link</a>
+			<a href="#" class="navigation">Link</a>
+			<a href="#" class="navigation">Link</a>
+			<a href="#" class="navigation">Link</a>					
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="header">
+					<h1><i>Желаем Ви късмет!</i></h1>
+					<h2><i>(HTML ~ 100 реда, CSS ~ 60, JS ~ 40 реда)</i></h2>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<fieldset>
+					<legend>Лични данни</legend>
+					<form method="get" action="http://enevsoft.net/echo.php" target="_blank" id="my-form">
+						<table class="nested" id="nested">
+							<tr>
+								<td class="form-image">
+									<iframe src="giphy.gif" width="350px" height="350px" scrolling="no" id="iframe"></iframe>
+								</td>
+								<td>
+									<div class="response" id="response">
+									<h1 class="response-paragraph">Благодарим ви!</p>
+									<button type="button" onclick="returnBack()">Обратно</button>
+									</div>
+									<div id="form-info">
+										Три имена*: <input type="text" required="required" name="name" placeholder="Въведете трите си имена" /><br />
+										Пол: <input type="radio" name="sex" id="male" value="male" />
+										<label for="male">Мъж</label>
+										<input type="radio" name="sex" id="anonymous" value="anonymous" />
+										<label for="anonymous">Не казвам</label>
+										<input type="radio" name="sex" id="female" value="female">
+										<label for="female">Жена</label><br />
+										Дата на раждане: <input type="date" name="birthday" /><br />
+										Роден град <select id="select">
+										<option value="plovdiv">Майнатаун</option>
+										<option value="sofia">София</option>
+										<option value="varna">Варна</option>
+										</select>
+										<div id="checkbox">
+											Говорими езици: <input type="checkbox" name="languages[]" id="bg" value="bg" />
+											<label for="bg">Български</label>
+											<input type="checkbox" name="languages[]" id="armenski" value="armenski" />
+											<label for="armenski">Арменски</label>
+											<input type="checkbox" name="languages[]" id="hindi" value="hindi">
+											<label for="hindi">Хинди</label>
+										<span>
+										<button type="button" onclick="addNew()" class="float-right">+ Добави</button>
+										</span>
+										</div>
+										Телефон за контакт <input type="tel" name="tel"  /><br />
+										<textarea class="textarea" placeholder="Моля, напишете ни нещо интересно! Нека да споделим мига. ;-)" name="textarea"></textarea><br /><br />
+										<input type="reset" value="Reset" />
+										<button type="button" class="float-right" onclick="sendForm()">Send</button>
+									</div>
+								</td>
+								<td class="form-image">
+									<img src="motivation.jpg" class="motivation" />
+								</td>
+							</tr>
+						</table>
+					</form>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="footer-pic">
+					<img src="students.jpg" class="students" />
+					<img src="wa_big.jpg" class="web-academy" />
+				</div
+			</td>
+		</tr>
+	</table>
+	<script src="FE1_final.js"></script>
+</body>
+</html>
